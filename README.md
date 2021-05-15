@@ -51,16 +51,17 @@
     ```sh
     $ echo $JAVA_HOME
     ```
-    
 
 - Menginstall SDKMAN!
 
   Install unzip dan zip
 
-    ```sh
-    $ sudo update-alternatives --config java
-    There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/java-11-openjdk-amd64/bin/java
-    Nothing to configure.
+     ```sh
+    $ sudo apt-get install zip
+    The following additional packages will be installed:
+    unzip
+    The following NEW packages will be installed:
+    unzip zip
     ```
 
     Eksekusi scripts yang ada pada url untuk meng-install
