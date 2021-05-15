@@ -7,7 +7,7 @@
     Install java
 
     ```sh
-    $ sudo apt install openjdk-11-jdk -y
+    $ sudo apt install openjdk-11-jdk -y atau sudo apt-get install openjdk-11-jre openjdk-11-jdk
     Tunggu sampai proses selesai "done".
     ```
 
