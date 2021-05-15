@@ -70,6 +70,15 @@
     $ curl -s "https://get.sdkman.io" | bash
     Tunggu sampai proses selesai "done".
     ```
+    
+    Jika muncul keterangan curl not found, Install dengan sudo apt  install curl
+    
+    ```sh
+    Command 'curl' not found, but can be installed with:
+
+    sudo snap install curl  # version 7.76.1, or
+    sudo apt  install curl  # version 7.68.0-1ubuntu2.5
+    ```
 
     Baca dan eksekusi scripts pada file yang dituju untuk memulai konfigurasi sdkman
 
