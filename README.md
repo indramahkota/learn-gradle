@@ -19,17 +19,48 @@
     OpenJDK Runtime Environment Corretto-11.0.10.9.1 (build 11.0.10+9-LTS)
     OpenJDK 64-Bit Server VM Corretto-11.0.10.9.1 (build 11.0.10+9-LTS, mixed mode)
     ```
+    
+    Menemukan path instalasi Java
+    
+    ```sh
+    $ sudo update-alternatives --config java
+    There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+    Nothing to configure.
+    ```
+    
+    Buka file environmen
+    
+    ```sh
+    $ sudo nano /etc/environment
+    ```
+    
+    Tambahkan JAVA_HOME, path nya saja tidak dengan /bin/java
+    
+    ```sh
+    JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+    ```
+    
+    Agar perubahan bisa digunakan, log out dan login atau pakai perintah source
+    
+    ```sh
+    $ source /etc/environment
+    ```
+    
+    Cek Variable JAVA_HOME
+    
+    ```sh
+    $ echo $JAVA_HOME
+    ```
+    
 
 - Menginstall SDKMAN!
 
   Install unzip dan zip
 
     ```sh
-    $ sudo apt-get install zip
-    The following additional packages will be installed:
-    unzip
-    The following NEW packages will be installed:
-    unzip zip
+    $ sudo update-alternatives --config java
+    There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+    Nothing to configure.
     ```
 
     Eksekusi scripts yang ada pada url untuk meng-install
